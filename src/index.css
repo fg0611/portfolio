@@ -13,6 +13,7 @@
 }
 
 .container {
+  animation: transitionIn 0.75;
   background-color: white;
   height: 100vh;
   width: 100vw;
@@ -21,6 +22,17 @@
     "header" max-content
     "main" auto
     "footer" max-content;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .header {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./skills.css";
 
 const skills = [
@@ -6,7 +6,7 @@ const skills = [
   { name: "html", url: "images/skills/html.jfif", type: "lang" },
   { name: "css", url: "images/skills/css.png", type: "lang" },
   { name: "python", url: "images/skills/python.png", type: "lang" },
-  { name: "r", url: "images/skills/r.png", type: "lang" },
+  { name: "R", url: "images/skills/r.png", type: "lang" },
   { name: "postgreSql", url: "images/skills/postgre.png", type: "db" },
   { name: "mongodb", url: "images/skills/mongo.png", type: "db" },
   { name: "firebase", url: "images/skills/firebase.png", type: "db" },
@@ -22,19 +22,36 @@ const skills = [
   { name: "civil3d", url: "images/skills/civil.png", type: "tool" }
 ];
 
-export default (props) => (
-  <div>
-    <div className="skills-container">
-      {!skills?.length ? (
-        <img className="skills-img" src="/images/loader.gif" alt="" />
-      ) : (
-        skills.map((skill) => (
-          <div key={skill.url} className="skills-item">
-            <img className="skills-img" src={skill.url} alt="" />
-            {/* <p className="skills-p">{skill.name}</p> */}
-          </div>
-        ))
-      )}
+export default function Skills() {
+  const index = useRef(0);
+  let text = "Hi My name is Fran";
+  const [currentText, setCurrentText] = useState("");
+
+  useEffect(() => {
+    const time = setTimeout(() => {
+      setCurrentText((value) => value + text.charAt(index.current));
+      index.current += 1;
+    }, 1000);
+    return () => {
+      clearTimeout(time);
+    };
+  }, [currentText, text]);
+
+  return (
+    <div>
+      <div className="skills-container">
+        <p>{text}</p>
+        {!skills?.length ? (
+          <img className="skills-img" src="/images/loader.gif" alt="" />
+        ) : (
+          skills.map((skill) => (
+            <div key={skill.url} className="skills-item">
+              <img className="skills-img" src={skill.url} alt="" />
+              <p className="skills-p">{skill.name}</p>
+            </div>
+          ))
+        )}
+      </div>
     </div>
-  </div>
-);
+  );
+}

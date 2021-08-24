@@ -7,7 +7,6 @@
 }
 
 .card {
-  border: 1px solid rgb(192, 189, 189);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,4 +22,6 @@
 .foot {
   display: grid;
   color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }

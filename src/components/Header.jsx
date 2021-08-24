@@ -1,27 +1,62 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import "./styles.css";
+import styled from "styled-components";
+
+const Button = styled.button`
+  background-color: white;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 15px;
+  outline: 0;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px lightgray;
+  transition: ease background-color 500ms;
+  &:hover {
+    color: #fafafa;
+    background-color: #616161;
+  }
+`;
+
+const ButtonToggle = styled(Button)`
+  opacity: 0.6;
+  ${({ active }) =>
+    active &&
+    `
+opacity: 1;
+color: #fafafa;
+background-color: #424242;
+
+`}
+`;
+
+const types = ["projects", "skills", "studies", "experience"];
+
+function BtnGroup() {
+  const [active, setActive] = useState(types[0]);
+  return (
+    <div>
+      {types?.map((type) => (
+        <NavLink key={type} to={type}>
+          <ButtonToggle
+            active={active === type}
+            onClick={() => {
+              setActive(type);
+              console.log(type);
+            }}
+          >
+            {type}
+          </ButtonToggle>
+        </NavLink>
+      ))}
+    </div>
+  );
+}
 
 export default function Header() {
-  const initialTypes = [
-    { name: "projects", className: "btn" },
-    { name: "skills", className: "btn" },
-    { name: "studies", className: "btn" },
-    { name: "experience", className: "btn" }
-  ];
-  const [types, setTypes] = useState(initialTypes);
-
   return (
     <header className="inner">
-      <div>
-        {types.map((type) => (
-          <NavLink key={type.name} to={type.name}>
-            <button value={type.name} className={type.className}>
-              {type.name}
-            </button>
-          </NavLink>
-        ))}
-      </div>
+      <BtnGroup />
     </header>
   );
 }
