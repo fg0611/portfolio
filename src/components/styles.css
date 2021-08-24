@@ -1,0 +1,48 @@
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.item {
+  min-height: max-content;
+  min-width: max-content;
+  border: 1px solid white;
+}
+
+.btn {
+  color: rgb(5, 4, 5);
+  border: 0.5px dashed black;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.986);
+  text-align: center;
+  font-size: 15px;
+  width: max-content;
+  padding: 5px 5px 5px 5px;
+  margin: 2px;
+  justify-self: center;
+  transition: ease background-color 500ms;
+  transition: ease color 1000ms;
+}
+
+.btn:hover {
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  background-color: rgba(73, 73, 73, 0.986);
+  border: 0px;
+  font-size: 16px;
+}
+
+.btns {
+  background-color: white;
+}
+
+.selected {
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  background-color: rgba(73, 73, 73, 0.986);
+  border: 0px;
+  font-size: 16px;
+}
