@@ -23,35 +23,18 @@ const skills = [
 ];
 
 export default function Skills() {
-  const index = useRef(0);
-  let text = "Hi My name is Fran";
-  const [currentText, setCurrentText] = useState("");
-
-  useEffect(() => {
-    const time = setTimeout(() => {
-      setCurrentText((value) => value + text.charAt(index.current));
-      index.current += 1;
-    }, 1000);
-    return () => {
-      clearTimeout(time);
-    };
-  }, [currentText, text]);
-
   return (
-    <div>
-      <div className="skills-container">
-        <p>{text}</p>
-        {!skills?.length ? (
-          <img className="skills-img" src="/images/loader.gif" alt="" />
-        ) : (
-          skills.map((skill) => (
-            <div key={skill.url} className="skills-item">
-              <img className="skills-img" src={skill.url} alt="" />
-              <p className="skills-p">{skill.name}</p>
-            </div>
-          ))
-        )}
-      </div>
+    <div className="skills-container">
+      {!skills?.length ? (
+        <img className="skills-img" src="/images/loader.gif" alt="" />
+      ) : (
+        skills.map((skill) => (
+          <div key={skill.url} className="skills-item">
+            <img className="skills-img" src={skill.url} alt="" />
+            <p className="line anim-typewriter">{skill.name}</p>
+          </div>
+        ))
+      )}
     </div>
   );
 }

@@ -1,4 +1,8 @@
 .skills-container {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(54, 54, 54);
   color: black;
   display: flex;
   flex-wrap: wrap;
@@ -6,32 +10,61 @@
   align-items: end;
 }
 
-.skill-subcontainer {
-  border: 2px solid black;
-  min-width: 100px;
-  min-height: 100px;
-}
-
 .skills-item {
-  opacity: 0.7;
-  border-radius: 50px;
-  width: 80px;
-  height: 80px;
+  opacity: 1;
+  border-radius: 15px;
+  width: 120px;
+  height: 120px;
   margin: 40px;
 }
 
 .skills-item:hover {
-  opacity: 1.5;
+  opacity: 0.6;
 }
 
 .skills-img {
-  align-self: center;
+  margin-top: 5px;
   padding: 2px 2px 2px 2px;
   border-radius: 50px;
-  width: 100%;
+  width: 80px;
+  height: 80px;
   height: auto;
 }
 
-.skills-p {
-  color: black;
+.line {
+  color: white;
+  position: relative;
+  width: 16em;
+  height: auto;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+.anim-typewriter {
+  margin-top: 5px;
+  animation: typewriter 4s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 4em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
