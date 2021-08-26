@@ -28,16 +28,19 @@ export default (props) => (
   <div className="cards">
     {projects?.length &&
       projects.map((project) => (
-        <div
-          className="pj-card"
-          onClick={() => {
-            window.open(project.url);
-          }}
-        >
+        <div className="pj-card">
           <img className="pj-img" src={project.img} alt="" />
           <div className="pj-info">
             <div className="pj-title">{project.name}</div>
             <div className="pj-desc">{project.desc}</div>
+            <button
+              className="pj-btn"
+              onClick={() => {
+                window.open(project.url);
+              }}
+            >
+              visit
+            </button>
           </div>
         </div>
       ))}

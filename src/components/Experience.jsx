@@ -3,15 +3,10 @@ import "./exp.css";
 
 const exps = [
   {
-    title: "Freelance Consultant",
+    title: "Javascript Developer",
     desc:
-      "During this period I did independent work as an engineer that included: - Development of Works Progress plans - Analysis of prices and Budgets - Isolated calculations in different areas with their specificities (Structural, Hydric, Stability)",
-    url: "images/experience/freelance.png"
-  },
-  {
-    title: "civil engineer",
-    desc: "did work for hire with deadlines",
-    url: "images/experience/inmac.png"
+      "-Web Development of a Custom CMS platform with React, Hooks, Redux, Firebase (services), Google Maps API (services)",
+    url: "images/experience/spark.png"
   },
   {
     title: "Bulk Data & Budget Analyst",
@@ -20,23 +15,26 @@ const exps = [
     url: "images/experience/msp.png"
   },
   {
-    title: "Javascript Developer",
+    title: "Freelance Consultant",
     desc:
-      "-Web Development of a Custom CMS platform with React, Hooks, Redux, Firebase (services), Google Maps API (services)",
-    url: "images/experience/spark.png"
+      "During this period I did independent work as an engineer that included: - Development of Works Progress plans - Analysis of prices and Budgets - Isolated calculations in different areas with their specificities (Structural, Hydric, Stability)",
+    url: "images/experience/freelance.png"
+  },
+  {
+    title: "Civil Engineer",
+    desc: "did work for hire with deadlines",
+    url: "images/experience/inmac.png"
   }
 ];
 
 export default (props) => (
-  <div className="exp-cards">
+  <div className="exp-cont">
     {exps?.length &&
       exps.map((exp) => (
-        <div className="exp-card">
+        <div className="exp-subcont">
           <img className="exp-img" src={exp.url} alt="" />
-          <div className="exp-foot">
-            <p>{exp.title}</p>
-            <p>{exp.desc}</p>
-          </div>
+          <p>{exp.title}</p>
+          <p>{exp.desc}</p>
         </div>
       ))}
   </div>

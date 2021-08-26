@@ -1,0 +1,22 @@
+.exp-cont {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.exp-subcont {
+  align-self: start;
+  color: black;
+  margin: 10px;
+  max-height: 400px;
+  max-width: 400px;
+}
+
+.exp-img {
+  border: 1px solid black;
+  max-width: 200px;
+  max-height: 200px;
+}

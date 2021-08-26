@@ -47,18 +47,17 @@
 }
 
 .home-info {
-  justify-content: start;
+  justify-self: start;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
   background: rgba(255, 255, 255, 0.6);
   color: rgb(0, 0, 0);
   font-family: "Courier New", Courier, monospace;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   opacity: 1;
   transition: opacity 1s;
 }
