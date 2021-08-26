@@ -8,15 +8,21 @@
 }
 
 .exp-subcont {
+  border-radius: 20px;
   align-self: start;
   color: black;
   margin: 10px;
   max-height: 400px;
   max-width: 400px;
 }
+.exp-title {
+  color: black;
+  font-size: 1.25em;
+  font-weight: bold;
+}
 
 .exp-img {
-  border: 1px solid black;
+  border-radius: 15px;
   max-width: 200px;
   max-height: 200px;
 }
