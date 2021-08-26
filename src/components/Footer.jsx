@@ -17,12 +17,8 @@ export default (props) => (
     >
       <i class="fa fa-linkedin" aria-hidden="true"></i>
     </button>
-    <button
-      onClick={() => {
-        window.open("https://www.linkedin.com/in/frangarrido0611/");
-      }}
-    >
+    <a class="button" href="mailto:fg0611@gmail.com">
       <i class="fa fa-envelope" aria-hidden="true"></i>
-    </button>
+    </a>
   </div>
 );
