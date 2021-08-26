@@ -9,17 +9,17 @@ const exps = [
   },
   {
     title: "Bulk Data & Budget Analyst",
-    desc: "-Budget Analyst, Advances and Variations in Hydraulic Works of the Province of Córdoba.",
+    desc: "-Budget Analyst, Advances and Variations in Hydraulic Works of the Province of Córdoba, Argentina.",
     url: "images/experience/msp.png",
   },
   {
     title: "Freelance Consultant",
-    desc: "During this period I did independent work as an engineer that included: - Development of Works Progress plans - Analysis of prices and Budgets - Isolated calculations in different areas with their specificities (Structural, Hydric, Stability)",
+    desc: "During this period I did independent work as civil engineer that included: - Development of Works Progress plans - Analysis of prices and Budgets - Isolated calculations in different areas with their specificities (Structural, Hydric, Stability)",
     url: "images/experience/freelance.png",
   },
   {
     title: "Civil Engineer",
-    desc: "Worked as a Civil Eng in a Buenos Aires company in several projects",
+    desc: "Worked as a Civil Eng in a Buenos Aires company in several projects: - Development of Works Progress plans - Analysis of prices and Budgets - Isolated calculations in different areas with their specificities (Structural, Hydric, Stability)",
     url: "images/experience/inmac.png",
   },
 ];
