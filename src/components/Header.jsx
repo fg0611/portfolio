@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const Button = styled.button`
+  margin: 2px;
   background-color: white;
   color: black;
   padding: 5px 15px;
@@ -30,7 +31,7 @@ background-color: #424242;
 `}
 `;
 
-const types = ["projects", "skills", "studies", "experience"];
+const types = ["home", "projects", "skills", "studies", "experience"];
 
 function BtnGroup() {
   const [active, setActive] = useState(types[0]);
