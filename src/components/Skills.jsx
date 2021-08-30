@@ -19,7 +19,7 @@ const skills = [
   { name: "docker", url: "images/skills/docker.jfif", type: "tool" },
   { name: "excel", url: "images/skills/excel.png", type: "tool" },
   { name: "vercel", url: "images/skills/vercel.jpg", type: "tool" },
-  { name: "civil3d", url: "images/skills/civil.png", type: "tool" }
+  { name: "civil3d", url: "images/skills/civil.png", type: "tool" },
 ];
 
 export default function Skills() {

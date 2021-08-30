@@ -11,7 +11,7 @@ const projects = [
   {
     img: "/images/projects/gym2.gif",
     url: "https://sport-project.vercel.app/",
-    name: "SportApp (better)",
+    name: "SportApp v2",
     desc: "A full E-Commerce made with JS, Node, React, Redux, Express,PostgreSQL & Firebase",
   },
   {
@@ -34,25 +34,27 @@ const projects = [
   },
 ];
 
-export default (props) => (
-  <div className="cards">
-    {projects?.length &&
-      projects.map((project) => (
-        <div className="pj-card">
-          <img className="pj-img" src={project.img} alt="" />
-          <div className="pj-info">
-            <div className="pj-title">{project.name}</div>
-            <div className="pj-desc">{project.desc}</div>
-            <button
-              className="pj-btn"
-              onClick={() => {
-                window.open(project.url);
-              }}
-            >
-              visit
-            </button>
+export default function Projects(props) {
+  return (
+    <div className="cards">
+      {projects?.length &&
+        projects.map((project) => (
+          <div key={project.name} className="pj-card">
+            <img className="pj-img" src={project.img} alt="" />
+            <div className="pj-info">
+              <div className="pj-title">{project.name}</div>
+              <div className="pj-desc">{project.desc}</div>
+              <button
+                className="pj-btn"
+                onClick={() => {
+                  window.open(project.url);
+                }}
+              >
+                visit
+              </button>
+            </div>
           </div>
-        </div>
-      ))}
-  </div>
-);
+        ))}
+    </div>
+  );
+}

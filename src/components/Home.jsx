@@ -29,7 +29,9 @@ export default function Home() {
       </div>
       <div className="home-img-cont">
         {imgs?.length &&
-          imgs.map((img) => <img className="home-img" src={img} alt="..." />)}
+          imgs.map((img) => (
+            <img key={img} className="home-img" src={img} alt="..." />
+          ))}
       </div>
     </div>
   );

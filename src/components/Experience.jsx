@@ -28,7 +28,7 @@ export default () => (
   <div className="exp-cont">
     {exps?.length &&
       exps.map((exp) => (
-        <div className="exp-subcont">
+        <div key={exp.title} className="exp-subcont">
           <img className="exp-img" src={exp.url} alt="" />
           <p className="exp-title">{exp.title}</p>
           <p className="exp-desc">{exp.desc}</p>
