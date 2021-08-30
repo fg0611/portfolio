@@ -15,6 +15,12 @@ const projects = [
     desc: "Made with Javascript, Node, React, Redux, Express,PostgreSQL & Firebase",
   },
   {
+    img: "/images/projects/maps-api-js.gif",
+    url: "https://map-api-js.vercel.app/",
+    name: "Directions Finder",
+    desc: "Find directions between two sites using google maps API services",
+  },
+  {
     img: "/images/projects/resptemp.png",
     url: "https://sport-project.vercel.app/",
     name: "responsive template",
