@@ -3,28 +3,34 @@ import "./projects.css";
 
 const projects = [
   {
-    img: "/images/projects/gym1.png",
+    img: "/images/projects/gym1.gif",
     url: "https://gym-app-ecommerce.vercel.app/",
     name: "SportApp",
-    desc: "Made with Javascript, Node, React, Redux, Express,PostgreSQL & Firebase",
+    desc: "A full E-Commerce made with Javascript, Node, React, Redux, Express, PostgreSQL, Firebase Auth & Styled with CSS and material UI. ",
   },
   {
-    img: "/images/projects/gym2.png",
-    url: "https://gym-app-ecommerce.vercel.app/",
+    img: "/images/projects/gym2.gif",
+    url: "https://sport-project.vercel.app/",
     name: "SportApp (better)",
-    desc: "Made with Javascript, Node, React, Redux, Express,PostgreSQL & Firebase",
+    desc: "A full E-Commerce made with JS, Node, React, Redux, Express,PostgreSQL & Firebase",
   },
   {
     img: "/images/projects/maps-api-js.gif",
     url: "https://map-api-js.vercel.app/",
     name: "Directions Finder",
-    desc: "Find directions between two sites using google maps API services",
+    desc: "Find directions between two sites using google maps API services. Created using JS, HTML & CSS",
   },
   {
-    img: "/images/projects/resptemp.png",
-    url: "https://sport-project.vercel.app/",
+    img: "/images/projects/firestore-crud.gif",
+    url: "https://firestore-crud-react.vercel.app/",
+    name: "Firestore Links CRUD",
+    desc: "This a URLs list manager created with React & Firestore, added some style with CSS and material icons",
+  },
+  {
+    img: "/images/projects/responsive.gif",
+    url: "https://map-api-js.vercel.app/",
     name: "responsive template",
-    desc: "reusable responsive template, made with JS HTML & CSS",
+    desc: "reusable responsive template, made only with HTML & CSS",
   },
 ];
 
