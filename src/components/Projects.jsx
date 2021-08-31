@@ -18,13 +18,19 @@ const projects = [
     img: "/images/projects/maps-api-js.gif",
     url: "https://map-api-js.vercel.app/",
     name: "Directions Finder",
-    desc: "Find directions between two sites using google maps API services. Created using JS, HTML & CSS",
+    desc: "Find directions data between two sites using Google Maps API services (places, distance matrix, JS...). Created using JS, HTML & CSS",
   },
   {
     img: "/images/projects/firestore-crud.gif",
     url: "https://firestore-crud-react.vercel.app/",
     name: "Firestore Links CRUD",
-    desc: "This a URLs list manager created with React & Firestore, added some style with CSS and material icons",
+    desc: "This is a URLs list manager created with React & Firestore, styles added with CSS and material icons",
+  },
+  {
+    img: "/images/projects/movieapp.gif",
+    url: "https://moviesapp-tau.vercel.app/",
+    name: "Movies App",
+    desc: "A very easy to use responsive app made with React,Redux & CSS that allows the user to get data from the OMDB API & save the Favorite ones inside device's localStorage",
   },
   {
     img: "/images/projects/responsive.gif",
