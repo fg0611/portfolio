@@ -3,7 +3,7 @@ import HomeSlider from "./HomeSlider";
 import "./home.css";
 
 const imgs = [
-  "images/home/art.jpeg",
+  "images/home/pool.png",
   "images/home/couple.png",
   "images/home/chiqui.png",
   "images/home/negriti.jpeg",
@@ -11,8 +11,8 @@ const imgs = [
   "images/home/civil.png",
   "images/home/draw.jpeg",
   "images/home/draw2.jpeg",
+  "images/home/art.jpeg",
   "images/home/vegan.jpg",
-  "images/home/pool.png",
 ];
 
 export default function Home() {
