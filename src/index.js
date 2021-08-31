@@ -8,6 +8,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Studies from "./components/Studies";
 import Experience from "./components/Experience";
+
 import "./index.css";
 const App = (props) => {
   return (

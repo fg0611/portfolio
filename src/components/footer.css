@@ -1,0 +1,13 @@
+.footer-img {
+  margin: 15px;
+  width: 40px;
+  height: 40px;
+}
+
+.footer-link {
+  background-color: white;
+}
+
+.footer-link:hover {
+  transform: scale(1.2);
+}

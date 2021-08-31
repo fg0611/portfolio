@@ -1,0 +1,45 @@
+.slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-img {
+  max-width: 60%;
+  max-height: auto;
+}
+
+.right-arrow {
+  position: absolute;
+  align-self: center;
+  top: auto;
+  right: 5%;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: auto;
+  left: 10%;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.img {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.img.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.02);
+}

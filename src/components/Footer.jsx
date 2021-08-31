@@ -1,24 +1,25 @@
 import React from "react";
-import "./styles.css";
+import "./footer.css";
 
 export default (props) => (
   <div className="footer">
-    <button
-      onClick={() => {
-        window.open("https://github.com/fg0611");
-      }}
+    <a className="footer-link" href="https://github.com/fg0611">
+      <img className="footer-img" src="/images/logos/git2.png" alt="" />
+    </a>
+    <a
+      className="footer-link"
+      href="https://www.linkedin.com/in/frangarrido0611/"
     >
-      <i className="fa fa-github" aria-hidden="true"></i>
-    </button>
-    <button
-      onClick={() => {
-        window.open("https://www.linkedin.com/in/frangarrido0611/");
-      }}
+      <img className="footer-img" src="/images/logos/linkedin.png" alt="" />
+    </a>
+    <a className="footer-link" href="mailto:fg0611@gmail.com">
+      <img className="footer-img" src="/images/logos/gmail.png" alt="" />
+    </a>
+    <a
+      className="footer-link"
+      href="https://drive.google.com/file/d/1zbSzw5T3JW4lI3JrtGZbgGsASX2mMoVA/view?usp=sharing"
     >
-      <i className="fa fa-linkedin" aria-hidden="true"></i>
-    </button>
-    <a className="button" href="mailto:fg0611@gmail.com">
-      <i className="fa fa-envelope" aria-hidden="true"></i>
+      <img className="footer-img" src="/images/logos/cv.png" alt="" />
     </a>
   </div>
 );
