@@ -1,0 +1,33 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  padding-top: 20px;
+}
+
+.studies-img {
+  width: 70%;
+  height: auto;
+  transition: 0.5s;
+}
+
+.studies-img:hover {
+  transform: scale(1.03);
+}
+
+.foot {
+  display: grid;
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}

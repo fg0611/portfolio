@@ -12,10 +12,12 @@ const Button = styled.button`
   text-transform: uppercase;
   cursor: pointer;
   box-shadow: 0px 2px 2px lightgray;
-  transition: ease background-color 500ms;
+  transition: ease background-color 1s;
   &:hover {
     color: #fafafa;
     background-color: #616161;
+    transform: scale(1.03);
+
   }
 `;
 
@@ -31,7 +33,7 @@ background-color: #424242;
 `}
 `;
 
-const types = ["home", "projects", "skills", "studies", "experience"];
+const types = ["home", "projects", "skills", "experience", "studies", "others"];
 
 function BtnGroup() {
   const [active, setActive] = useState(types[0]);
@@ -43,7 +45,7 @@ function BtnGroup() {
             active={active === type}
             onClick={() => {
               setActive(type);
-              console.log(type);
+              // console.log(type);
             }}
           >
             {type}

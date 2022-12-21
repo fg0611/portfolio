@@ -12,11 +12,17 @@
   justify-content: center;
   align-items: center;
   max-width: 600px;
+  padding-top: 20px;
 }
 
 .studies-img {
   width: 70%;
   height: auto;
+  transition: 0.5s;
+}
+
+.studies-img:hover {
+  transform: scale(1.03);
 }
 
 .foot {
