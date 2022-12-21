@@ -17,7 +17,7 @@ export default (props) => (
     </a>
     <a
       className="footer-link"
-      href="https://drive.google.com/file/d/1zbSzw5T3JW4lI3JrtGZbgGsASX2mMoVA/view?usp=sharing"
+      href="https://drive.google.com/file/d/1W-XEzgSG6iUFKm2tuRHuRSPJ9Vjc8Jkp/view?usp=share_link"
     >
       <img className="footer-img" src="/images/logos/cv.png" alt="" />
     </a>
