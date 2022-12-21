@@ -22,7 +22,7 @@ export default function HomeSlider({ imgs }) {
         imgs.map((img, index) => (
           <div className={index === current ? "img active" : "img"} key={index}>
             {index === current && (
-              <img key={img} className="home-img" src={img} alt="..." />
+              <img key={img} className="home-img" src={img} alt="..." loading="lazy"/>
             )}
           </div>
         ))}
