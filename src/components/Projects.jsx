@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./projects.css";
 
 const projects = [
@@ -40,27 +40,74 @@ const projects = [
   },
 ];
 
+const dataProjects = [
+  {
+    title: "la_tropical - Dashboard",
+    src: "https://app.powerbi.com/view?r=eyJrIjoiZDA2MWQyZGYtYzcwYy00MTkwLTg2YTAtOTU4ODgzODg5ZTk1IiwidCI6ImY0Y2Q4MTlmLWM1NmUtNGI5NS05ZTc4LTEwN2IxYmFjM2ZmMiJ9&embedImagePlaceholder=true",
+  },
+];
+
 export default function Projects(props) {
+  const [isWeb, setisWeb] = useState(true);
+
   return (
-    <div className="cards">
-      {projects?.length &&
-        projects.map((project) => (
-          <div key={project.name} className="pj-card">
-            <img className="pj-img" src={project.img} alt="" />
-            <div className="pj-info">
-              <div className="pj-title">{project.name}</div>
-              <div className="pj-desc">{project.desc}</div>
-              <button
-                className="pj-btn"
-                onClick={() => {
-                  window.open(project.url);
-                }}
-              >
-                visit
-              </button>
+    <div>
+      <p className="btn-group-title">Click below to choose type</p>
+      <div className="btns-container">
+        <button
+          className={isWeb ? "btn-on" : "btn-off"}
+          onClick={() => {
+            !isWeb && setisWeb(!isWeb);
+          }}
+        >
+          web projects
+        </button>
+        <button
+          className={!isWeb ? "btn-on" : "btn-off"}
+          onClick={() => {
+            isWeb && setisWeb(!isWeb);
+          }}
+        >
+          data projects
+        </button>
+      </div>
+      {isWeb && (
+        <div className="cards">
+          {projects?.length &&
+            projects.map((project) => (
+              <div key={project.name} className="pj-card">
+                <img className="pj-img" src={project.img} alt="" />
+                <div className="pj-info">
+                  <div className="pj-title">{project.name}</div>
+                  <div className="pj-desc">{project.desc}</div>
+                  <button
+                    className="pj-btn"
+                    onClick={() => {
+                      window.open(project.url);
+                    }}
+                  >
+                    visit
+                  </button>
+                </div>
+              </div>
+            ))}
+        </div>
+      )}
+      {!isWeb && (
+        <div className="bi-cards">
+          {dataProjects.map((pj) => (
+            <div>
+              <iframe
+                title={pj.title}
+                src={pj.src}
+                frameborder="0"
+                allowFullScreen="true"
+              ></iframe>
+              <p style={{color: "black"}}>{pj.title}</p>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+      )}
     </div>
   );
 }

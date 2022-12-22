@@ -6,6 +6,10 @@ const studies = [
     url: "/images/studies/solo-python.jpg",
     site: "https://www.sololearn.com/",
   },
+  {
+    url: "/images/studies/solo-angular-nest.jpg",
+    site: "https://www.sololearn.com/",
+  },
 ];
 
 export default () => (

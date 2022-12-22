@@ -1,3 +1,40 @@
+.btn-group-title {
+  margin-top: 20px;
+  color: #333232;
+}
+
+.btns-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.btn-on {
+  padding: 10px 40px 10px 40px;
+  background-color: #333232;
+  color: #fafafa;
+  height: 50px;
+  font-size: large;
+  border: none;
+  transition: 0.5s;
+}
+
+.btn-off {
+  padding: 2px;
+  background-color: white;
+  color: black;
+  height: 50px;
+  font-size: large;
+  transition: 0.5s;
+}
+.btn-off:hover {
+  background-color: #999696;
+  color: #fafafa;
+  transform: scale(1.03);
+}
+
+
+
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -76,4 +113,21 @@
 .pj-btn:hover {
   color: #fafafa;
   background-color: #616161;
+}
+
+.bi-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.bi-cards iframe {
+  overflow: auto;
+  min-height: 300px;
+  min-width: 400px;
+  margin: 10px;
+  border: #616161 solid 1px;
+  border-radius: 5px;
 }
