@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: portfolio-beige-xi.vercel.app
-Token: d47004ecf91da5863c4a2d7836ab2368661e10c704a254f8b6c125744dd14fad

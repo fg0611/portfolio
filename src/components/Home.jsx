@@ -22,7 +22,7 @@ export default function Home() {
         <p className="home-desc">Francisco Garrido</p>
         <p className="home-title">Developer</p>
         <p className="home-desc">
-          I am a full stack developer, data scientist and engineer. Passionate
+          I'm a full stack developer, data scientist and engineer. Passionate
           about data, databases, engineering, ui/ux & philosophy. I like to be
           Committed, Responsible, Respectful, Serious and Humble on every
           project and challenge that I tackle.

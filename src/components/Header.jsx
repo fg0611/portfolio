@@ -17,7 +17,6 @@ const Button = styled.button`
     color: #fafafa;
     background-color: #616161;
     transform: scale(1.03);
-
   }
 `;
 
@@ -29,7 +28,6 @@ const ButtonToggle = styled(Button)`
 opacity: 1;
 color: #fafafa;
 background-color: #424242;
-
 `}
 `;
 

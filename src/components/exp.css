@@ -8,21 +8,35 @@
 }
 
 .exp-subcont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   border-radius: 20px;
   align-self: start;
   color: black;
   margin: 10px;
-  max-height: 400px;
   max-width: 400px;
 }
+
 .exp-title {
   color: black;
   font-size: 1.25em;
   font-weight: bold;
 }
 
+.exp-img-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(245, 245, 245);
+  height: 210px;
+  border-radius: 10px;
+  width: 250px;
+}
+
 .exp-img {
-  border: grey solid 2px;
+  /* border: grey solid 2px; */
   border-radius: 15px;
   max-width: 200px;
   max-height: 200px;

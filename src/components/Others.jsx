@@ -14,8 +14,8 @@ const studies = [
 
 export default () => (
   <div className="cards">
-    {studies.map((st) => (
-      <div className="card" key={st.site}>
+    {studies.map((st, i) => (
+      <div className="card" key={st.site + i}>
         <a href={st.site} target="_blank">
           <img className="studies-img" src={st.url} alt="" />
         </a>
